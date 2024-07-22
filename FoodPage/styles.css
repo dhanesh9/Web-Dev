@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background-color: #ee7b00; 
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ffeb3b;
+}
+
+/* Special Menus Section */
+.special-menus {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.special-menus h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.special-menus .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.special-menus .menu-item {
+    flex: 1 1 calc(33% - 20px);
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.special-menus .menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.special-menus .menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.special-menus .menu-item p {
+    font-size: 16px;
+}
+
+.special-menus .menu-item .price {
+    background: #f8d12f;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.special-menus .menu-item .stars {
+    color: #f8d12f;
+    font-size: 16px;
+}
+
+/* Featured Posts Section */
+.featured-posts {
+    padding: 50px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.featured-posts h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.featured-posts .post-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured-posts .post-item {
+    flex: 1 1 calc(33% - 20px);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.featured-posts .post-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.featured-posts .post-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.featured-posts .post-item p {
+    font-size: 16px;
+}
+
+/* Footer Styling */
+footer {
+    background: url('https://muralsyourway.vtexassets.com/arquivos/ids/234586/Brooklyn-Bridge-and-NYC-Skyline-at-Night-Wall-Mural.jpg?v=638165374098470000') no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-info {
+    margin-bottom: 20px;
+}
+
+footer .footer-info h3 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer .footer-info p {
+    color: #ddd;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* RESIZING Images */
+.soup, .pizza {
+    width: 250px !important; 
+    height: 270px; /
+}
+.post-img {
+    width: 330px !important; 
+    height: 220px; 
+}

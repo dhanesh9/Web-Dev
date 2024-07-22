@@ -1,0 +1,35 @@
+<!DOCTYPE html5 PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Employee Details Form</title>
+</head>
+<body>
+    <h1>Employee Details Form</h1>
+    
+    <form action="/submit-employee-details" method="post">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="employeeId" required="required" /><br /><br />
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="required" /><br /><br />
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department" multiple="multiple" required="required">
+            <option value="hr">Media</option>
+            <option value="finance">Finance</option>
+            <option value="engineering">Sales</option>
+        </select><br /><br />
+    
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required="required">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br /><br />
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

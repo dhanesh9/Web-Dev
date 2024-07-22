@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Details Form</title>
+        <link rel="stylesheet" href="task1.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Student Details Form</h1>
+        </header>
+        
+        <section>
+            <h2>Enter Your Details</h2>
+            <form action="/submit-student-details" method="get">
+                <label for="studentId">Student ID:
+                    <input type="text" id="studentId" name="studentId" required="required" maxlength="50" />
+                    <span class="error-message" id="studentIdError">Maximum 50 characters allowed</span>
+                </label>
+                <br /><br />
+                
+                <label for="name">Name:
+                    <input type="text" id="name" name="name" required="required" maxlength="50" />
+                    <span class="error-message" id="nameError">Maximum 50 characters allowed</span>
+                </label>
+                <br /><br />
+                
+                <label for="department">Department:
+                    <select name="department" id="department" required="required">
+                        <option value="cs">Computer Science</option>
+                        <option value="ee">MIS</option>
+                        <option value="me">Software Engineering</option>
+                    </select>
+                </label>
+                <br /><br />
+                
+                <div>
+                    <strong>Optional Subjects:</strong><br />
+                    <input type="checkbox" id="math" name="optionalSubjects" value="math" />
+                    <label for="math">Mathematics</label>
+                    <br />
+                    <input type="checkbox" id="physics" name="optionalSubjects" value="physics" />
+                    <label for="physics">Physics</label>
+                    <br />
+                    <input type="checkbox" id="chemistry" name="optionalSubjects" value="chemistry" />
+                    <label for="chemistry">Chemistry</label>
+                    <br />
+                </div>
+                <br />
+                
+                <div>
+                    <strong>Gender:</strong><br />
+                    <input type="radio" id="male" name="gender" value="male" required="required" />
+                    <label for="male">Male</label>
+                    <br />
+                    <input type="radio" id="female" name="gender" value="female" required="required" />
+                    <label for="female">Female</label>
+                    <br />
+                    <input type="radio" id="other" name="gender" value="other" required="required" />
+                    <label for="other">Other</label>
+                    <br />
+                </div>
+                <br />
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+    </html>
