@@ -217,3 +217,112 @@ footer .social a {
     width: 330px !important; 
     height: 220px; 
 }
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #f4f4f4; /* Change the background color as needed */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Ensuring consistent font family */
+    color: #333;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #ee7b00; /* Using the header color for consistency */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-section button:hover {
+    background-color: #dd6f00; /* Darker shade for hover effect */
+}
+
+
+/* Reservation Section Styling */
+.reservation-section {
+    background-color: #ffffff; /* Light background for visibility */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.reservation-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Consistent font family */
+    color: #333;
+}
+
+.reservation-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reservation-section .form-group {
+    margin-bottom: 15px;
+}
+
+.reservation-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.reservation-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation-section button {
+    background-color: #ee7b00; /* Harmonizing with the theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reservation-section button:hover {
+    background-color: #dd6f00; /* Darker for hover effect */
+}

@@ -13,18 +13,18 @@
             <h1 class="logo">Food Palace</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Our Updates</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="reservation-btn">Reservation</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#updates">Our Updates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservation" class="reservation-btn">Reservation</a></li>
                 </ul>
-            </nav>
+            </nav>            
         </div>
     </header>
 
-    <section class="special-menus">
+    <section id="menu" class="special-menus">
         <div class="container">
             <h2>Special Menus</h2>
             <div class="menu-items">
@@ -49,6 +49,58 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <p>Please fill out the inquiry form below.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name (Required)</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email (Required)</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Required)</label>
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message (Required)</label>
+                    <textarea id="message" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form>
+                <div class="form-group">
+                    <label for="res-name">Name</label>
+                    <input type="text" id="res-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-email">Email</label>
+                    <input type="email" id="res-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-date">Date</label>
+                    <input type="date" id="res-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="res-time">Time</label>
+                    <input type="time" id="res-time" required>
+                </div>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </section>
+    
 
     <section class="featured-posts">
         <div class="container">
